@@ -18,3 +18,4 @@
 เหมือนกับของ _config.yml
 6. หากลบแฟ้ม README.md ไปแล้ว เลือกกดปุ่ม Add a README ใหม่ได้
 7. หากลบแฟ้ม index.md ทำให้ github.io เรียก README.md มาแทน
+
