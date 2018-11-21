@@ -1,9 +1,9 @@
-เล่าเรื่องสร้าง Repository : "www" \
-เพื่อแบ่งปัน content ในรูป source code และ web page \
-แบบ html, js, css, image, resource เป็นต้น \
-อ่านที่ https://help.github.com/articles/what-is-github-pages/ \
-เปิดผ่าน http://thaiall.github.io/www/ \
-ขั้นตอน ดังนี้
+เล่าเรื่องสร้าง Repository : "www" <br/>
+เพื่อแบ่งปัน content ในรูป source code และ web page <br/>
+แบบ html, js, css, image, resource เป็นต้น <br/>
+อ่านที่ https://help.github.com/articles/what-is-github-pages/ <br/>
+เปิดผ่าน http://thaiall.github.io/www/ <br/>
+ขั้นตอน ดังนี้ <br/>
 1. กด New Repository
 หากเลือก Initialize this repository with a README จะทำให้สร้างแฟ้ม README.md
 2. หากต้องการ GitHub Pages
