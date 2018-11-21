@@ -1,0 +1,35 @@
+/* ปรับปรุง : 2559-07-12 */
+#main{background-color:#3B5998;font-family:microsoft sans serif;font-size:12px;margin:0px 0px 0px 0px;} 
+textarea{font-family:microsoft sans serif;color:#000088;background-color:#ddffdd} 
+fieldset{margin:10px 0px 0px 0px;padding:0px;} 
+legend{background-color:#444444;color:#ffffdd;font-size:14px;display:block;padding-left:5px;padding-right:10px;border:2px solid #f9f9f9;}
+.topbar{width:100%;background-color:black;color:white;text-align:center;height:90px;padding:0px;border-spacing:0px;border-style:none;} 
+.topbar a:link, .topbar a:visited{color:#aaffaa;text-decoration:none;} 
+.topbar td {text-align:center} 
+.foot_text{color:white;text-decoration:none;}
+.table_zero{padding:0px;border-spacing:0px;border:0px;}
+#m_banner{width:732px;margin:0px 0px 0px 0px;background-color:white;margin-left:auto;margin-right:auto;padding:0px;border-spacing:0px;} 
+#m_town{text-align:center;}
+.m_still{width:728px;background-color:white;margin-left:auto;margin-right:auto;padding:0px;border-spacing:0px;} 
+.m_still_footer{width:728px;} 
+.m_hidden{width:728px;vertical-align:top;} 
+.m_hidden_search{width:732px;margin:0px 0px 0px 0px;background-color:white;margin-left:auto;margin-right:auto;padding:0px;border-spacing:0px;} 
+.m_min300{width:420px;float:left;}
+@media only screen and (max-width:320px) {.m_still, .m_still_footer{visibility:visible;width:310px} .m_min300{width:300px;float:left;} .m_hidden, .m_hidden_search{visibility:hidden;display:none} #m_town{visibility:hidden;display:none} #m_banner{visibility:hidden;display:none}} 
+@media only screen and (min-width:321px) and (max-width:375px) { .m_still, .m_still_footer{visibility:visible;width:365px} .m_min300{width:300px;float:left;} .m_hidden, .m_hidden_search{visibility:hidden;display:none} #m_town{visibility:hidden;display:none} #m_banner{visibility:hidden;display:none}} 
+@media only screen and (min-width:376px) and (max-width:414px) { .m_still, .m_still_footer{visibility:visible;width:400px} .m_min300{width:300px;float:left;} .m_hidden, .m_hidden_search{visibility:hidden;display:none} #m_town{visibility:hidden;display:none} #m_banner{visibility:hidden;display:none}}
+@media only screen and (max-width:768px) { #m_banner{visibility:hidden;display:none}} 
+#bar_topnav{width:100%;height:30px;background-color:#000044;margin:0px 0px 0px 0px;padding:0px;border-spacing:0px;border-style:none;}
+ul.topnav{list-style-type: none;margin:0px;padding:0px;overflow:hidden;background-image:url(rspbar.png);}
+ul.topnav li{float:left;}
+ul.topnav li a {display:inline-block;color:white;text-align:center;padding:5px 5px;text-decoration:none;font-size:10px;height:20px;}
+ul.topnav li a:hover {background-color: #111;}
+ul.topnav li.icon {display: none;}
+@media screen and (max-width:414px){ 
+ul.topnav li:not(:first-child) {display: none;} 
+ul.topnav li.icon{float:right;display:inline-block;} 
+ul.topnav.responsive {position: relative;} 
+ul.topnav.responsive li.icon{position: absolute;right:0px;top:0px;} 
+ul.topnav.responsive li{float:none;display:inline; }
+ul.topnav.responsive li a {display: block;text-align: left;}
+}

@@ -1,0 +1,31 @@
+<html><head>
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<style type="text/css">
+.inViewport{width:320px;} 
+.outsideViewport{width:768px;} 
+@media only screen and (max-width:768px) {td{border-style:solid;}.outsideViewport{width:760px;}} 
+@media only screen and (min-width:321px) and (max-width:375px) {td{background-color:yellow;}} 
+@media only screen and (max-width:320px) {td{background-color:red;}} 
+</style></head><body>
+<table class="inViewport">
+<tr><td>
+ต.ย. กำหนด media ให้กับ viewport 3 ขนาด
+1. ถ้า media ขนาดไม่เกิน 320 ให้ตารางมีพื้นสีเขียว (iphone5)
+2. ถ้า media ขนาดไม่เกิน 321 - 375 ให้ตารางมีพื้นสีเขียว (iphone6)
+3. ถ้า media ขนาดไม่เกิน 768 ให้แสดงเส้นขอบตาราง (ipad)
+ต.ย.นี้ทำเพื่อทดสอบ Mobile view ของ PageSpeed Insights
+หากใช้จริงต้องไม่กำหนด 760 ให้ต่ำไปกว่านี้ เพราะใช้จอไม่เต็มที่
+หากอยากผ่าน mobile ต้องกำหนด 400 แต่ใช้จริงต้องไปดู Desktop view แทน
+</td></tr></table>
+<table class="outsideViewport">
+<tr><td>
+ต.ย. สำหรับเข้าตรวจ PageSpeed Insights
+ส่วน User Experience
+ได้ 81/100 คะแนน (แก้โดยเปลี่ยน 760 เป็น 400)
+ส่วน Speed
+ได้ 100/100 คะแนน
+โดยมี ข้อความแจ้งปัญหา คือ
+The page content is 768 CSS pixels wide, 
+but the viewport is only 411 CSS pixels wide.
+</td></tr></table>
+</body></html>

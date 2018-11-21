@@ -1,0 +1,194 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head><title>Responsive Web Design Sample</title>
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<meta name="keywords" content="responsive,web,design,menu" />
+<meta name="description" content="responsive web design" />
+<!-- link type="text/css" rel="stylesheet" href="rsp62.css" -->
+<link rel="icon" type="image/x-icon" href="rsp.ico" />
+
+<style type="text/css">
+@font-face{font-family:'THChakraPetch'; src: url('rsp_thchakrapetch.ttf');}
+@font-face{font-family:'AlexBrush'; src: url('rsp_alexbrush.ttf');}
+@font-face{font-family:'TLWGTypewriter'; src: url('rsp_tlwgtypewriter.ttf');}
+
+#main{
+background-color:#000099;
+font-family:microsoft sans serif;
+font-size:12px;
+margin:0px 0px 0px 0px
+}
+
+fieldset{
+margin:10px 0px 0px 0px 	!important;
+padding:0px					!important;
+border:1px solid gray		!important; 
+border-radius:5px			!important; 
+margin-left:auto			!important;
+margin-right:auto			!important;
+} 
+
+legend{
+background-color:#000044	!important;
+color:#ffffdd				!important;
+font-size:18px				!important;
+margin:10px	10px 0px 10px 	!important; 
+padding:10px 10px 5px 10px	!important;
+border:2px solid #f9f9f9	!important;
+max-width:fit-content		!important; 
+border-radius:10px			!important; 
+}
+p{
+margin:0px 0px 0px 0px;
+}
+.topbar{
+width:100%;
+background-color:black;
+color:white;
+text-align:center;
+height:90px;
+padding:0px;
+border-spacing:0px;
+border-style:none
+} 
+
+.topbar a:link, .topbar a:visited{
+color:#aaffaa;
+text-decoration:none
+} 
+
+.topbar td {
+text-align:center
+} 
+
+.m_still{
+width:728px;
+background-color:white;
+margin-left:auto;
+margin-right:auto;
+padding:0px;
+border-spacing:0px;
+}
+
+.m_still_footer{
+width:728px;
+padding:0px;
+border-spacing:0px;
+background-color:#dddddd;
+}
+
+.m_hidden_footer{
+padding:0px;
+border-spacing:0px;
+} 
+
+/* iphone5:320 ขนาดไม่เกิน 320 ทำส่วนนี้ */
+@media only screen and (max-width:320px) {
+.m_still, .m_still_footer{visibility:visible;width:315px} 
+.m_hidden_footer {visibility:hidden;display:none} 
+} 
+
+/* iphone6:375 galaxy s5:360 ขนาด 321 - 375 ทำส่วนนี้ */
+@media only screen and (min-width:321px) and (max-width:375px) { 
+.m_still, .m_still_footer{visibility:visible;width:355px} 
+.m_hidden_footer{visibility:hidden;display:none} 
+} 
+
+/* top navigator */
+#bar_topnav{
+width:100%;height:30px;background-color:#000044;margin:0px 0px 0px 0px;padding:0px;border-spacing:0px;border-style:none
+}
+
+ul.topnav {list-style-type: none;margin:0px;padding:0px;overflow:hidden;background-image:url(rspbar.png)}
+ul.topnav li{float:left}
+ul.topnav li a {display:inline-block;margin:0px;color:white;text-align:center;padding:5px 5px;text-decoration:none;font-size:10px;height:20px}
+ul.topnav li a:hover {color:yellow;}
+ul.topnav li.icon {display:none}
+
+/* iphone5 plus ขนาดไม่เกิน 320 ทำส่วนนี้ */
+@media screen and (max-width:320px){ 
+ul.topnav li:not(:first-child) {display:none;} 
+ul.topnav li.icon{float:right;display:inline-block;} 
+ul.topnav.responsive {position:relative;} 
+ul.topnav.responsive li.icon{position:absolute;right:0px;top:0px;} 
+ul.topnav.responsive li{float:none;display:inline;}
+ul.topnav.responsive li a {display:block;text-align:left;}
+}
+/* ul.topnav.responsive li a {display:block;text-align:left;margin:5px 0px 10px;} */
+</style>
+<script type="text/javascript">
+function menu(){document.getElementsByClassName("topnav")[0].classList.toggle("responsive");}
+</script>
+<!-- link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" -->
+<!-- link rel="stylesheet" href="bootstrap.min.css" -->
+</head><body id="main">
+
+<table style="width:100%;height:60px;font-family:AlexBrush;font-size:25px;color:white;"><tr><td>
+Responsive Web Design
+</td></tr></table>
+
+<table id="bar_topnav"><tr><td>
+<ul class="topnav">
+<li><a href="http://www.thaiall.com" class="active">Home</a></li>
+<li><a href="http://www.thaiall.com/update1.htm">Contents</a></li>
+<li><a href="http://www.thaiall.com/itinlife/">Articles</a></li>
+<li><a href="http://www.thaiall.com/english/">English</a></li>
+<li><a href="http://www.thaiall.com/me">ทีมงาน</a></li>
+<li><a href="http://www.thaiall.com/sponsor" style="color:yellow">สนับสนุนทีมงาน</a></li>
+<li class="icon"><a href="javascript:void(0);" onclick="menu()">MENU</a></li>
+</ul>
+</td></tr></table>
+
+<fieldset class="m_still"><legend><span style="font-weight:bold;">Information</span></legend>
+<div style="width:80%;height:100px;margin-left:auto;margin-right:auto;">
+<span style="color:red;font-size:40px;">&hearts; &#9829; &#x2665;</span>
+<span style="color:pink;font-size:40px;">&#10084; &#x2764;</span>
+<span style="color:blue;font-size:40px;">&#10085; &#x2765;</span>
+<span style="font-family:thchakrapetch;font-size:60px;">Hello world!</span>
+<br/><a href="http://www.thaiall.com/web2/blank_menu.htm">http://www.thaiall.com/web2/blank_menu.htm</a>
+</div>
+<br/><span style="font-weight:bold;">รวมตัวอย่างที่น่าสนใจ เกี่ยวกับ plugin for webpage</span>
+<ol style="font-family:THChakraPetch;font-size:20px;">
+<li>ตัวอย่าง Like button ที่ <a href="http://www.thaiall.com/handbill">http://www.thaiall.com/handbill</a></li>
+<li>ตัวอย่าง Menu จาก bootstrap + lightbox ที่ <a href="http://www.thaiall.com/marry.htm">http://www.thaiall.com/marry.htm</a></li>
+<li>ตัวอย่าง Menu จาก bootstrap ที่ <a href="http://www.thaiall.com/marry_menu.htm">http://www.thaiall.com/marry_menu.htm</a></li>
+<li>ตัวอย่างการใช้ Glyphicon ที่ <a href="https://getbootstrap.com/docs/3.3/components/">https://getbootstrap.com</a></li>
+<li>ตัวอย่าง Responsive web design ที่ <a href="http://www.thaiall.com/web2/index.html">http://www.thaiall.com/web2</a></li>
+<li>บริการตรวจ Page speed ที่ <a href="https://developers.google.com/speed/pagespeed/">https://developers.google.com</a></li>
+<li>การใช้ char รูปหัวใจ แทน Glyphicon ที่ <a href="http://www.rapidtables.com/web/html/html-codes/html-code-heart.htm">http://www.rapidtables.com</a></li>
+</ol>
+
+<span style="font-weight:bold;">Webpage : score</span>
+<ol style="font-family:THChakraPetch;font-size:20px;">
+<li>Send <a href="https://developers.google.com/speed/pagespeed/insights/?url=http%3A%2F%2Fwww.thaiall.com%2Fweb2%2Fblank_menu.htm">blank_menu.htm</a> to PageSpeed ได้  SP100/100 UE100/100</li>
+<li>ทดสอบ CSS <a href="http://jigsaw.w3.org/css-validator/check/referer">http://jigsaw.w3.org/css-validator/check/referer</a> : no error</li>
+<li>ทดสอบ XHTML <a href="http://validator.w3.org/check/referer">http://validator.w3.org/check/referer</a> : successfully checked</li>
+</ol>
+</fieldset>
+
+<!-- footer -->
+<table style="margin-left:auto;margin-right:auto;font-family:'TLWGTypewriter';" class="m_still_footer"><tr>
+<td style="vertical-align:top;">
+<table style="width:150px;"><tr><td>
+<p><a href="http://www.thaiall.com">Home</a></p>
+<p><a href="http://www.thaiabc.com">Thaiabc.com</a></p>
+<p><a href="http://www.thainame.net">Thainame.net</a></p>
+<p><a href="http://www.nation.ac.th">Nation University</a></p>
+</td></tr></table>
+</td><td style="vertical-align:top;">
+<table style="width:150px;">
+<tr><td><a href="http://www.thaiall.com/php/">PHP</a></td></tr>
+<tr><td><a href="http://www.thaiall.com/mysql/">MySQL</a></td></tr>
+<tr><td><a href="http://www.thaiall.com/vbnet">Visual basic.NET</a></td></tr>
+<tr><td><a href="http://www.thaiall.com/tabletpc/">TabletPC</a></td></tr>
+<tr><td><a href="http://www.thaiall.com/isinthai">Linux</a></td></tr>
+</table>
+</td><td style="vertical-align:top;" class="m_hidden_footer">
+<table style="width:150px;">
+<tr><td><a href="http://www.thaiall.com/quiz">Online quiz</a></td></tr>
+<tr><td><a href="http://www.thaiall.com/download/">Download</a></td></tr>
+<tr><td><a href="http://www.thaiall.com/search.htm">Search Engine</a></td></tr>
+</table>
+</td></tr></table>
+</body></html>
