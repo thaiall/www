@@ -2,7 +2,7 @@
 เพื่อแบ่งปัน content ในรูป source code และ web page <br/>
 แบบ html, js, css, image, resource เป็นต้น <br/>
 อ่านที่ https://help.github.com/articles/what-is-github-pages/ <br/>
-เปิดผ่าน http://thaiall.github.io/www/ <br/>
++ http://thaiall.github.io/www/ <br/>
 ขั้นตอน ดังนี้ <br/>
 1. กด New Repository
 หากเลือก Initialize this repository with a README จะทำให้สร้างแฟ้ม README.md
@@ -18,4 +18,5 @@
 เหมือนกับของ _config.yml
 6. หากลบแฟ้ม README.md ไปแล้ว เลือกกดปุ่ม Add a README ใหม่ได้
 7. หากลบแฟ้ม index.md ทำให้ github.io เรียก README.md มาแทน
-
++ https://thaiall.github.io/tech100/wordpage/
++ http://www.thaiall.com/web2/github.htm
