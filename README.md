@@ -12,9 +12,8 @@
 - ลบแฟ้ม _config.yml และ README.md แล้วเลือก theme ใหม่
 - แก้ไข _config.yml และใช้ชื่อ theme ที่รู้จัก 
 เช่น jekyll-theme-slate แทน jekyll-theme-leap-day
-5. เลือก Theme แล้วสร้างแฟ้ม index.md 
-ที่มี Description ในการ change ว่า "Set theme jekyll-theme-time-machine"
-เหมือนกับของ _config.yml
+5. เลือก Theme แล้วสร้างแฟ้ม index.md ที่มี Description ในการ change \
+ว่า "Set theme jekyll-theme-time-machine" เหมือนกับของ _config.yml
 6. หากลบแฟ้ม README.md ไปแล้ว เลือกกดปุ่ม Add a README ใหม่ได้
 7. หากลบแฟ้ม index.md ทำให้ github.io เรียก README.md มาแทน
 8. สร้าง index.md จะได้ Description เป็น "Create index.md" \
