@@ -1,6 +1,6 @@
-# เล่าเรื่องสร้าง Repository : "www" <br/>
-### เพื่อแบ่งปัน content ในรูป source code และ web page <br/>
-### แบบ html, js, css, image, resource เป็นต้น <br/>
+# เล่าเรื่องสร้าง Repository : "www"
+### เพื่อแบ่งปัน content ในรูป source code และ web page
+### แบบ html, js, css, image, resource เป็นต้น
 
 ## บทเรียน
 1. กด New Repository
@@ -17,6 +17,8 @@
 เหมือนกับของ _config.yml
 6. หากลบแฟ้ม README.md ไปแล้ว เลือกกดปุ่ม Add a README ใหม่ได้
 7. หากลบแฟ้ม index.md ทำให้ github.io เรียก README.md มาแทน
+8. สร้าง index.md จะได้ Description เป็น "Create index.md" \
+แต่ github.io ยังมอง README.md เหมือนเดิม ต้องเปลี่ยน Description
 
 ## Web guides
 + https://thaiall.github.io/tech100/wordpage/
