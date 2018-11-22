@@ -1,7 +1,7 @@
-/* ปรับปรุง : 2561-11-18
-- เริ่มใช้กับ http://www.thaiall.com/web2 
-- ใช้ UTF-8 แทน Windows-874 เริ่มปรับ 18 พฤศจิกายน 2561
-- แบ่งปันที่ https://thaiall.github.io/programming-page/css/
+/* ปรับปรุง : 2561-11-22
+- เริ่มใช้กับ http://www.thaiall.com/web2  
+- ใช้ UTF-8 แทน Windows-874 เริ่มปรับ 22 พฤศจิกายน 2561
+- แบ่งปันที่ http://thaiall.github.io/www/web2
 */
 @font-face{font-family:'THChakraPetch'; src: url('rsp_thchakrapetch.ttf');}
 @font-face{font-family:'AlexBrush'; src: url('rsp_alexbrush.ttf');}
@@ -55,22 +55,21 @@ padding:10px !important;
 background-color:#ffffdd;
 font-weight:bold;
 color:#444444;
-} 
-.thchakrapetch20 {font-family:thchakrapetch;font-size:20px;color:#444444;}
-.odd{background-color:#ddffdd;}
-.even{background-color:#ffffdd;}
-.mytable {
-margin-left:auto;
-margin-right:auto;
 }
-.mytable td {
-padding:3px; 
-border-bottom: 1px solid #dddddd;
+.shortnav {
+color:white;
+font-family:WRTishkid2;
+font-size:20px;
+background-color:#000044 !important;
 }
-.mytable tr:nth-child(even) {background-color: #ddffdd}
-.mytable tr:nth-child(odd) {background-color: #ffffdd}
-.mytable tr:hover {background-color: #ddddff}
-
+.shortnav a:link,.shortnav a:visited {
+color:white;
+font-size:12px;
+}
+.shortnav a:hover {
+color:#aaaaaa;
+font-size:12px;
+}
 .topbar{
 width:100%;
 background-color:black;
@@ -100,6 +99,13 @@ padding:0px;
 border:0px;
 vertical-align:top;
 }
+.odd{background-color:#ddffdd;}
+.even{background-color:#ffffdd;}
+.mytable {margin-left:auto;margin-right:auto;}
+.mytable td {padding:3px; border-bottom: 1px solid #dddddd;}
+.mytable tr:nth-child(even) {background-color: #ddffdd}
+.mytable tr:nth-child(odd) {background-color: #ffffdd}
+.mytable tr:hover {background-color: #ddddff}
 
 /* ipad ขนาดไม่เกิน 768 ทำส่วนนี้ */
 .m_still_1000{
