@@ -1,0 +1,85 @@
+﻿<!DOCTYPE html><html lang="th"><head><title>ทดสอบ</title>
+<meta charset="utf-8" />
+<meta name="keywords" content="ทดสอบ" />
+<meta name="description" content="ทดสอบ" />
+<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+<link rel="stylesheet" href="http://www.thaiall.com/lightbox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://www.thaiall.com/prototype.js"></script>
+<script type="text/javascript" src="http://www.thaiall.com/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="http://www.thaiall.com/lightbox.js"></script>
+<style>
+body { background-color:#dddddd; font-size:16px; text-align:center; }
+.mytable { width:400px; background-color:yellow; margin-left:auto; margin-right:auto;}
+.myrow { height:100px; }
+.mycell { width:200px; }
+.header
+{
+	margin:10px;
+	font-size:20px;
+	background-color:#ffffdd;
+	border:10px groove;
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+	text-align:center;
+}
+@media screen and (min-width:376px) and (max-width: 412px) 
+{ /* Nexus 5x */  
+body {background-color:pink;font-size:12px;} 
+.header{font-size:18px;width:400px;}
+.mytable{width:400px;margin-left:auto;margin-right:auto;background-color:white;}
+.myrow{height:80px;}
+.mycell{width:200px;}
+}
+@media screen and (max-width: 375px) 
+{ /* iPhone 6/7/8 */
+body {background-color:green;font-size:10px;} 
+.header{font-size:12px;width:300px;}
+.mytable{width:300px;margin-left:auto;margin-right:auto;background-color:red;}
+.myrow{height:80px;}
+.mycell{width:150px;}
+}
+</style>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script>
+// http://www.thaiall.com/java/bootstrap.htm
+jq164 = jQuery.noConflict(true);
+// $.get("http://ipinfo.io", function(response) { 
+jq164.get("http://ipinfo.io", function(response) { 
+console.log(response.ip); 
+document.data.ip.value = response.ip;
+}, "jsonp");
+</script>
+</head><body>
+<div class="header">ส่วนหัว</div>
+<table class="mytable">
+<tr class="myrow">
+<td class="mycell" style="background-color:orange">สวัสดีชาวโลก</td>
+<td class="mycell">นี่คือการทดสอบ</td>
+</tr>
+</table>
+<div class="mytable" style="background-color:green;">
+<a href="http://www.thaiall.com/me/picme.jpg" rel='lightbox[burin]'><img src="http://www.thaiall.com/me/picme.jpg" alt="burin in winter" height="160" /></a>
+<a href="http://www.thaiall.com/me/burinr.jpg" rel='lightbox[burin]'><img src="http://www.thaiall.com/me/burinr.jpg" alt="burin in uniform" height="160" /></a>
+</div>
+<div class="mytable">
+<p style="font-weight:bold;">Web guides (ปรับปรุง 61-11-27)</p>
+<ol style="text-align:left;">
+<li><a href="http://www.thaiall.com/html/test.htm">http://www.thaiall.com/html/test.htm</a> (v1)</li>
+<li><a href="http://www.thaiall.com/html5/test.htm">http://www.thaiall.com/html5/test.htm</a> (v2)</li>
+<li><a href="http://www.thaiall.com/java/test.htm">http://www.thaiall.com/java/test.htm</a> (v3)</li>
+<li><a href="http://www.thaiall.com/html/chrome">http://www.thaiall.com/html/chrome/</a> (DevTools)</li>
+<li><a href="http://www.thaiall.com/html/responsive.htm">http://www.thaiall.com/html/responsive.htm</a> (Mobile)</li>
+<li><a href="http://www.thaiall.com/html/indexo.html">http://www.thaiall.com/html/indexo.html</a> (Home)</li>
+<li><a href="http://www.thaiall.com/pwa/">http://www.thaiall.com/pwa/</a> (Mobile)</li>
+<li><a href="https://thaiall.github.io/www/web2">https://thaiall.github.io/www/web2</a> (rsp71.css)</li>
+<li><a href="http://www.thaiall.com/web2/github.htm">http://www.thaiall.com/web2/github.htm</a> (3 pages)</li>
+<li><a href="https://thaiall.github.io/tech100/wordpage">https://thaiall.github.io/tech100/wordpage</a> (3 pages)</li>
+<li><a href="http://www.thaiall.com/office/wordpage/">http://www.thaiall.com/office/wordpage/</a> (3 pages)</li>
+</ol>
+</div>
+<form name="data">
+<label style="font-weight:bold;">IP</label>
+<input name="ip" style="text-align:center;">
+</form>
+</body></html>

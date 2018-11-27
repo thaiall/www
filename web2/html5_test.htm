@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html><html lang="th"><head><title>ทดสอบ</title>
+<meta charset="utf-8" />
+<meta name="keywords" content="ทดสอบ" />
+<meta name="description" content="ทดสอบ" />
+<link rel="stylesheet" href="http://www.thaiall.com/lightbox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://www.thaiall.com/prototype.js"></script>
+<script type="text/javascript" src="http://www.thaiall.com/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="http://www.thaiall.com/lightbox.js"></script>
+<style>
+.header
+{
+	margin:10px;
+	font-size:16px;
+	background-color:#ffffdd;
+	border:10px groove;
+	width:400px;
+	margin-left:auto;
+	margin-right:auto;
+}
+</style>
+<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script>
+// http://www.thaiall.com/java/bootstrap.htm
+jq164 = jQuery.noConflict(true);
+// $.get("http://ipinfo.io", function(response) { 
+jq164.get("http://ipinfo.io", function(response) { 
+console.log(response.ip); 
+document.data.ip.value = response.ip;
+}, "jsonp");
+</script>
+</head><body style="text-align:center;">
+<div class="header">ส่วนหัว</div>
+<table align="center" width="400px" bgcolor="yellow">
+<tr height="100px">
+<td width="200px" bgcolor="orange">สวัสดีชาวโลก</td>
+<td width="200px">นี่คือการทดสอบ</td>
+</tr>
+</table>
+<div style="margin-left:auto;margin-right:auto;background-color:green;width:400px;">
+<a href="http://www.thaiall.com/me/picme.jpg" rel='lightbox[burin]'><img src="http://www.thaiall.com/me/picme.jpg" /></a>
+</div>
+<a href="http://www.thaiall.com/java/test.htm">http://www.thaiall.com/java/test.htm</a>
+<form name="data"><input name="ip" style="text-align:center;"></form>
+</body></html>
