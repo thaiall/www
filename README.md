@@ -23,3 +23,6 @@
 + https://thaiall.github.io/tech100/wordpage/
 + http://www.thaiall.com/web2/github.htm
 + http://thaiall.github.io/www/ 
++ https://thaiall.github.io/www/web2/html_test.htm
++ https://thaiall.github.io/www/web2/html5_test.htm
++ https://thaiall.github.io/www/web2/java_test.htm
