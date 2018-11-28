@@ -3,10 +3,19 @@
 <meta name="keywords" content="ทดสอบ" />
 <meta name="description" content="ทดสอบ" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-<link rel="stylesheet" href="http://www.thaiall.com/lightbox.css" type="text/css" media="screen" />
-<script type="text/javascript" src="http://www.thaiall.com/prototype.js"></script>
-<script type="text/javascript" src="http://www.thaiall.com/scriptaculous.js?load=effects,builder"></script>
-<script type="text/javascript" src="http://www.thaiall.com/lightbox.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" type="text/css" media="screen" />
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/scriptaculous/1.8.3/prototype.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/scriptaculous/1.8.3/scriptaculous.js?load=effects,builder"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox-plus-jquery.js"></script>
+<script>
+// http://www.thaiall.com/java/bootstrap.htm
+jq164 = jQuery.noConflict(true);
+// $.get("http://ipinfo.io", function(response) { 
+jq164.get("http://ipinfo.io", function(response) { 
+console.log(response.ip); 
+document.data.ip.value = response.ip;
+}, "jsonp");
+</script>
 <style>
 body { background-color:#dddddd; font-size:16px; text-align:center; }
 .mytable { width:400px; background-color:yellow; margin-left:auto; margin-right:auto;}
@@ -40,16 +49,6 @@ body {background-color:green;font-size:10px;}
 .mycell{width:150px;}
 }
 </style>
-<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script>
-// http://www.thaiall.com/java/bootstrap.htm
-jq164 = jQuery.noConflict(true);
-// $.get("http://ipinfo.io", function(response) { 
-jq164.get("http://ipinfo.io", function(response) { 
-console.log(response.ip); 
-document.data.ip.value = response.ip;
-}, "jsonp");
-</script>
 </head><body>
 <header class="header">ส่วนหัว</header>
 <main>
@@ -65,19 +64,22 @@ document.data.ip.value = response.ip;
 </div>
 <div class="mytable">
 <p style="font-weight:bold;">Web guides (ปรับปรุง 61-11-27)</p>
-<ol style="text-align:left;">
-<li><a href="http://www.thaiall.com/html/test.htm">http://www.thaiall.com/html/test.htm</a> (v1)</li>
-<li><a href="http://www.thaiall.com/html5/test.htm">http://www.thaiall.com/html5/test.htm</a> (v2)</li>
-<li><a href="http://www.thaiall.com/java/test.htm">http://www.thaiall.com/java/test.htm</a> (v3)</li>
-<li><a href="https://thaiall.github.io/www/web2/java_test.htm">https://thaiall.github.io/www/web2/java_test.htm</a> (v3:s)</li>
-<li><a href="http://www.thaiall.com/html/chrome">http://www.thaiall.com/html/chrome/</a> (DevTools)</li>
-<li><a href="http://www.thaiall.com/html/responsive.htm">http://www.thaiall.com/html/responsive.htm</a> (Mobile)</li>
-<li><a href="http://www.thaiall.com/html/indexo.html">http://www.thaiall.com/html/indexo.html</a> (Home)</li>
-<li><a href="http://www.thaiall.com/pwa/">http://www.thaiall.com/pwa/</a> (Mobile)</li>
-<li><a href="https://thaiall.github.io/www/web2">https://thaiall.github.io/www/web2</a> (rsp71.css)</li>
-<li><a href="http://www.thaiall.com/web2/github.htm">http://www.thaiall.com/web2/github.htm</a> (3 pages)</li>
-<li><a href="https://thaiall.github.io/tech100/wordpage">https://thaiall.github.io/tech100/wordpage</a> (3 pages)</li>
-<li><a href="http://www.thaiall.com/office/wordpage/">http://www.thaiall.com/office/wordpage/</a> (3 pages)</li>
+<ol style="text-align:left;padding-inline-start:30px;">
+<li><a href="http://www.thaiall.com/html/test.htm">thaiall.com/html/test.htm</a> (v1)</li>
+<li><a href="http://www.thaiall.com/html5/test.htm">thaiall.com/html5/test.htm</a> (v2)</li>
+<li><a href="http://www.thaiall.com/java/test.htm">thaiall.com/java/test.htm</a> (v3)</li>
+<li><a href="https://thaiall.github.io/www/web2/java_test.htm">thaiall.github.io/www/web2/java_test.htm</a> (v3:s)</li>
+<li><a href="http://www.thaiall.com/html/chrome">thaiall.com/html/chrome/</a> (DevTools)</li>
+<li><a href="http://www.thaiall.com/html/responsive.htm">thaiall.com/html/responsive.htm</a> (Mobile)</li>
+<li><a href="http://www.thaiall.com/html/indexo.html">thaiall.com/html/indexo.html</a> (Home)</li>
+<li><a href="http://www.thaiall.com/pwa/">thaiall.com/pwa/</a> (Mobile)</li>
+<li><a href="https://thaiall.github.io/www/web2">thaiall.github.io/www/web2</a> (rsp71.css)</li>
+<li><a href="http://www.thaiall.com/web2/github.htm">thaiall.com/web2/github.htm</a> (3 pages)</li>
+<li><a href="https://thaiall.github.io/tech100/wordpage">thaiall.github.io/tech100/wordpage</a> (3 pages)</li>
+<li><a href="http://www.thaiall.com/office/wordpage/">thaiall.com/office/wordpage/</a> (3 pages)</li>
+<li><a href="https://cdnjs.com/libraries/lightbox2">cdnjs.com/libraries/lightbox2</a> (Library)</li>
+<li><a href="https://cdnjs.com/libraries/jquery/">cdnjs.com/libraries/jquery/</a> (Library)</li>
+<li><a href="https://medium.com/@aswin_s/score-a-perfect-100-in-lighthouse-audits-part-1-3199163037">medium.com/../score-a-perfect-100..</a> (How to)</li>
 </ol>
 </div>
 </main>

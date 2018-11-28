@@ -6,6 +6,16 @@
 <script type="text/javascript" src="http://www.thaiall.com/prototype.js"></script>
 <script type="text/javascript" src="http://www.thaiall.com/scriptaculous.js?load=effects,builder"></script>
 <script type="text/javascript" src="http://www.thaiall.com/lightbox.js"></script>
+<script class="jsbin" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
+<script>
+// http://www.thaiall.com/java/bootstrap.htm
+jq164 = jQuery.noConflict(true);
+// $.get("http://ipinfo.io", function(response) { 
+jq164.get("http://ipinfo.io", function(response) { 
+console.log(response.ip); 
+document.data.ip.value = response.ip;
+}, "jsonp");
+</script>
 <style>
 .header
 {
@@ -18,16 +28,6 @@
 	margin-right:auto;
 }
 </style>
-<script class="jsbin" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js"></script>
-<script>
-// http://www.thaiall.com/java/bootstrap.htm
-jq164 = jQuery.noConflict(true);
-// $.get("http://ipinfo.io", function(response) { 
-jq164.get("http://ipinfo.io", function(response) { 
-console.log(response.ip); 
-document.data.ip.value = response.ip;
-}, "jsonp");
-</script>
 </head><body style="text-align:center;">
 <div class="header">ส่วนหัว</div>
 <table align="center" width="400px" bgcolor="yellow">
@@ -39,7 +39,9 @@ document.data.ip.value = response.ip;
 <div style="margin-left:auto;margin-right:auto;background-color:green;width:400px;">
 <a href="http://www.thaiall.com/me/picme.jpg" rel='lightbox[burin]'><img src="http://www.thaiall.com/me/picme.jpg" alt="burin in uniform" /></a>
 </div>
-<a href="http://www.thaiall.com/java/test.htm">http://www.thaiall.com/java/test.htm</a>
+<a href="http://www.thaiall.com/java/test.htm">thaiall.com/java/test.htm</a>
+<br/><a href="http://www.thaiall.com/java/test.htm">thaiall.com/web2/java_test.htm</a>
+<br/><a href="https://thaiall.github.io/www/web2/java_test.htm">thaiall.github.io/www/web2/java_test.htm</a>
 <form name="data">
 <label for="ip" style="font-weight:bold;">IP : 
 <input type="text" name="ip" style="text-align:center;" />
