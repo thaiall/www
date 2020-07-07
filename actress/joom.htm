@@ -1,164 +1,207 @@
-<!DOCTYPE html><html><head><title>จ๋อม (Joom)</title>
+<!DOCTYPE html><html><head><title>จ๋อมเว็บเพจ (Joom webpage)</title>
 <meta charset="utf-8" /><meta name="viewport" content="width=device-width,initial-scale=1" />
-<meta name="keywords" content="joom" /><meta name="description" content="จ๋อม (Joom)" />
+<meta name="keywords" content="joom,onepagedesign,responsive" /><meta name="description" content="จ๋อมเว็บเพจ คือ เว็บเพจตัวอย่างที่เป็นผลจากการออกแบบเว็บเพจแบบสแตติกโดยใช้ inline css และ internal css ให้รองรับการแสดงผลกับอุปกรณ์ที่หลากหลายได้เหมาะสม (responsive) ปรับเว็บเพจให้ส่งเข้าประเมินจาก page speed แล้วได้คะแนนสูง และอัพโหลดไปยังฟรีเว็บโฮสติ้งต่าง ๆ แล้วสามารถเรียกใช้โดยไม่ต้องปรับแต่งเพิ่มเติม" />
 <meta property="og:image" content="http://www.thaiall.com/actress/nok_mypictureonmagazine.jpg" />
-<link type="text/css" rel="stylesheet" href="http://www.thaiall.com/actress/rsp80.css" /><link rel="icon" type="image/x-icon" href="http://www.thaiall.com/actress/rsp.ico" />
-<style>body { background-color:#dddddd; }
-.blockcenter {text-align:center; margin:auto;} .blockhidden {text-align:center; margin:auto;}
-.covercard { width:1280px; font-family:wrtishkid2;font-size:20px;color:white;margin-top:5px;display:inline-block; /*text-align:center; margin:auto; */}
-.cardleft { width:80%; float:left; } .cardright { width:20%; float:left; } 
-.card1 {float:left;width:100px;height:140px;background-color:Aquamarine;border-radius:5px;padding:5px;margin:5px;}
-.card2 {float:left;width:200px;height:180px;background-color:blue;border-radius:3px;padding:3px;margin:3px;}
-@media only screen and (max-width:375px){.covercard { width:365px; }.card1 {width:345px;}.card2 {width:345px;background-color:#ffffdd;}.cardright { width:100%;.}.blockhidden{visibility:hidden;display:none;}}
-@media only screen and (min-width:376px) and (max-width:768px){.covercard { width:750px; }.card1 {width:730px;background-color:#ddddff;}.card2 {width:730px;}.cardright { width:100%;}}
+<link type="text/css" rel="stylesheet" href="https://thaiwebsearch.hypermart.net/actress/rsp80.css" /><link rel="icon" type="image/x-icon" href="https://thaiwebsearch.hypermart.net/actress/rsp.ico" />
+<style>body { background-color:#dddddd; } li {float:left;width:120px;background-color:#ffffdd;margin:5px;border:1px outset gray;border-radius:3px;} p{float:left;}
+.blockcenter {text-align:center; margin:auto;} .blockhidden {text-align:center;margin:auto;} .iborder {border:1px outset white;border-radius:20px;} 
+.covercard { width:1100px; font-family:wrtishkid2;font-size:20px;color:white;margin-top:1px;display:inline-block;}
+.cardleft { width:20%; float:left; } .cardright { width:80%; float:left; } div.menuleft { text-align:left;margin:auto;margin-top:2px;width:90%;border:1px solid gray;border-radius:5px;}
+.card1 {float:left;width:99px;height:140px;background-color:Aquamarine;border-radius:5px;padding:5px;margin:5px;} .card2 {float:left;width:175px;height:170px;background-color:blue;border-radius:3px;padding:3px;margin:3px;}
+@media only screen and (max-width:375px){.covercard { width:360px; }.card1 {width:330px;}.card2 {width:330px;background-color:#ffffdd;}.cardleft{ width:95%;}.cardright{background-color:white !important;} .blockhidden{visibility:hidden;display:none;}}
+@media only screen and (min-width:376px) and (max-width:768px){.covercard { width:750px; }.card1 {width:730px;background-color:#ddddff;}.card2 {width:730px;}.cardleft{ width:90%;}.cardright{background-color:white !important;}}
+@font-face{font-family:'WRTishkid2';src:url('rsp_wr_tish_kid2.ttf');font-display:swap;}
 </style>
-<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+<link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" type="text/css" media="screen" />
 </head><body>
 
-<br/>ปรับปรุง : 2563-07-05 (ปรับ responsive)
+<br/>ปรับปรุง : 2563-07-07 (ส่งเข้า firebase)
 <!-- จ๋อม (Joom) -->
 <!-- 8.0 -->
+
+<!-- Part : 1 = cover photo -->
 <div class="blockcenter">
 <div class="covercard" style="background-color:#0077ff;color:white;">
 <img src="http://www.thaiall.com/actress/joom800.jpg" style="width:100%;float:left;display:inline-block;" />
 </div>
 </div>
 
+<!-- Part : 2 = menu bar -->
 <div class="blockcenter">
-<div class="covercard" style="background-color:#0077ff;color:white;">
+<div class="covercard" style="background-color:#aa8866;color:blue;">
+<ul style="list-style-type:none;padding:0px;;margin:0px;">
+<li><a href="http://www.facebook.com/profile.php?id=814248894" target="_blank">FB Profile</a></li>
+<li><a href="joom_retouch1.jpg" title="Tifa ff7" target="_blank">Retouch Tifa</a></li>
+<li><a href="http://www.thaiall.com/actress/joom100.htm" target="_blank">Joom100</a></li>
+<li><a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_display" target="_blank">Tryit.asp</a></li>
+<li><a href="http://www.thaiall.com/me" target="_blank">About me</a></li>
+</ul>
+</div>
+</div>
+
+<!-- Part : 3 = cardleft กับ cardright -->
+<div class="blockcenter">
+<div class="covercard" style="background-color:white;border">
 <div class="cardleft">
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom43.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom43t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom44.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom44t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom45.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom45t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom46.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom46t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom47.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom47t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom48.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom48t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom37.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom37t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom38.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom38t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom49.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom49t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom40.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom40t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom41.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom41t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom42.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom42t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom31.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom31t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom32.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom32t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom33.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom33t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom34.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom34t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom35.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom35t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom36.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom36t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom25.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom25t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom26.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom26t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom27.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom27t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom28.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom28t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom29.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom29t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom30.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom30t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom19.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom19t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom20.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom20t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom21.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom21t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom22.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom22t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom23.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom23t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom24.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom24t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom13.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom13t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom14.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom14t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom15.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom15t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom16.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom16t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom17.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom17t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom18.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom18t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom07.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom07t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom08.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom08t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom09.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom09t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom10.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom10t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom11.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom11t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom12.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom12t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom01.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom01t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom02.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom02t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom03.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom03t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom04.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom04t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom05.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom05t.jpg" /></a></div>
-<div class="card1"><a href="http://www.thaiabc.com/actresse/joom06.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom06t.jpg" /></a></div>
-</div><!-- cardleft -->
-<div class="cardright">
 <div style="width:100%;background-color:white;display:inline-block;text-align:left;color:black;">
 <img src="http://www.thaiall.com/actress/joom_cam.jpg" style="float: left;height: 90px;border: 1px solid #ddd;border-radius: 5px;padding: 5px;" />
-<b>จ๋อม</b> .. ภาพชุดนี้ผม scan ด้วยมือเอง หรือไม่ก็ใช้กล้อง digital ส่วนตัวถ่ายมา หากภาพไม่ชัดเจน ก็ต้องขออภัย เพราะ Web Space มีน้อย ถึงแม้เธอคนนี้จะไม่มีผลงานแสดง แต่ผมก็ชอบ
+<b>จ๋อมเว็บเพจ</b> .. ภาพชุดนี้ผม scan ด้วยมือเอง หรือไม่ก็ใช้กล้อง Digital โบราณที่เป็นของส่วนตัวถ่ายมา หากภาพไม่ชัดเจน ก็ต้องขออภัยด้วย เพราะสมัยนั้น Web Space มีน้อย สรุปว่าแม้เธอคนนี้จะไม่มีผลงานแสดง แต่ผมก็ชอบนะ
 </div>
 <div style="width:100%;background-color:white;display:inline-block;color:blue;">
-<img src="joom_anime.jpg"  height="90px" style="float:left;" /> <a href="http://www.thaiall.com/readbookt">ผู้หญิง<br/>กับ<br/>การอ่าน</a>
+<img src="http://www.thaiall.com/actress/joom_anime.jpg"  height="90px" style="float:left;" /> <a href="http://www.thaiall.com/readbookt">ผู้หญิง<br/>กับ<br/>การอ่าน</a>
 </div>
 <div style="width:100%;background-color:white;display:inline-block;"><!-- menu block -->
-<div style="background-color:#ffffdd;text-align:left;margin:auto;width:90%">
-<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com">Home</a>
+<div class="menuleft" style="background-color:#000088;color:white;text-align:center;width:95%;">
+การพัฒนาเว็บเพจ
 </div>
-<div style="background-color:#dddddd;text-align:left;margin:auto;width:90%">
-<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com/products/">Product</a>
+<div class="menuleft" style="background-color:#ffffdd;">
+<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com/actress/joom.htm">Home</a>
 </div>
-<div style="background-color:#ffffdd;text-align:left;margin:auto;width:90%">
-<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com/members/">Members</a>
-</div>
-<div style="background-color:#dddddd;text-align:left;margin:auto;width:90%;margin-top:3px;">
-<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com/java/bootstrap.htm">Bootstrap</a>
-</div>
-<div style="background-color:#ffffdd;text-align:left;margin:auto;width:90%;margin-top:3px;">
+<div class="menuleft" style="background-color:#ffffdd;">
 <span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com/html/html.htm">HTML</a>
 </div>
-<div style="background-color:#dddddd;text-align:left;margin:auto;width:90%;margin-top:3px;">
+<div class="menuleft" style="background-color:#dddddd;">
 <span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com/html5/">HTML 5</a>
 </div>
-<div style="background-color:#ffffdd;text-align:left;margin:auto;width:90%;margin-top:3px;">
+<div class="menuleft" style="background-color:#dddddd;">
+<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com/java/bootstrap.htm">Bootstrap</a>
+</div>
+<div class="menuleft" style="background-color:#ffffdd;">
 <span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com/html/responsive.htm">Responsive</a>
 </div>
-<div style="background-color:#ffffdd;text-align:left;margin:auto;width:90%;margin-top:3px;">
-<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com/actress/joom100.htm">Joom100.htm</a>
+<div class="menuleft" style="background-color:#ffffdd;">
+<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com/adminlte-3.0.4/pages/examples/burin1.htm">AdminTLE</a>
 </div>
-<div style="background-color:#dddddd;text-align:left;margin:auto;width:90%;margin-top:3px;">
+<div class="menuleft" style="background-color:#dddddd;">
 <span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com/google/chrome.htm">Chrome</a>
 </div>
-<div style="background-color:#ffffdd;text-align:left;margin:auto;width:90%;margin-top:3px;">
+<div class="menuleft" style="background-color:#ffffdd;">
 <span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com/java/js01.htm">JS01</a>
 </div>
-<div style="background-color:#dddddd;text-align:left;margin:auto;width:90%;margin-top:3px;">
-<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com/me">About me</a>
+<div class="menuleft" style="background-color:#dddddd;">
+<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://www.thaiall.com/actress/joom_2563.png">รุ่น 2. 2563.png</a>
 </div>
-<div style="background-color:#ddffdd;text-align:left;margin:auto;width:90%;margin-top:3px;">
-<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="https://drive.google.com/file/d/1FnHxeRvEBc5fh-hjLXRkx3g2ibwfDTd1/view?usp=sharing">Google Drive</a>
+<div class="menuleft" style="background-color:#ffffdd;">
+<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="joom_540619.htm" target="_blank">รุ่น 1. 540619</a>
+</div>
+<div class="menuleft" style="background-color:#000088;color:white;text-align:center;width:95%;">
+ฟรีเว็บโฮสติ้ง
+</div>
+<div class="menuleft" style="background-color:#ddffdd;">
+<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="https://drive.google.com/file/d/1FnHxeRvEBc5fh-hjLXRkx3g2ibwfDTd1/view?usp=sharing">ใน Google Drive</a>
+</div>
+<div class="menuleft" style="background-color:#ffddff;">
+<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="https://sites.google.com/view/actressjoom/">ใน sites.google.com</a>
+</div>
+<div class="menuleft" style="background-color:#ddffdd;">
+<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="https://thaiabc.wixsite.com/actressjoom">ใน wix.com</a>
+</div>
+<div class="menuleft" style="background-color:#ffddff;">
+<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="https://thaiall.github.io/www/actress/joom.htm">ใน github.com</a>
+</div>
+<div class="menuleft" style="background-color:#ddffdd;">
+<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="http://thaiabc.ueuo.com/joom.htm">ใน freewha.com</a>
+</div>
+<div class="menuleft" style="background-color:#ffddff;">
+<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="https://thaiall63.herokuapp.com/joom.htm">ใน heroku.com</a>
+</div>
+<div class="menuleft" style="background-color:#ddffdd;">
+<span class="glyphicon glyphicon-home" style="color:black;font-size:12px;"></span> <a href="https://joom63-1efa2.web.app/">ใน Firebase</a>
+</div>
+<div class="menuleft" style="background-color:white;text-align:center;border:0px;">
+<span class="glyphicon glyphicon-heart" style="color:red;"></span>
 </div>
 </div><!-- menu block - inline -->
+</div><!-- cardleft -->
+<div class="cardright" style="background-color:#0077ff;border:1px solid white;border-radius:5px;">
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom43.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom43t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom44.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom44t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom45.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom45t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom46.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom46t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom47.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom47t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom48.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom48t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom37.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom37t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom38.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom38t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom49.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom49t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom40.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom40t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom41.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom41t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom42.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom42t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom31.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom31t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom32.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom32t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom33.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom33t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom34.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom34t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom35.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom35t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom36.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom36t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom25.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom25t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom26.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom26t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom27.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom27t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom28.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom28t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom29.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom29t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom30.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom30t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom19.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom19t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom20.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom20t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom21.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom21t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom22.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom22t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom23.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom23t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom24.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom24t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom13.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom13t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom14.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom14t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom15.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom15t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom16.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom16t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom17.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom17t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom18.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom18t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom08.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom08t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom09.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom09t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom10.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom10t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom11.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom11t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom12.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom12t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom01.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom01t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom02.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom02t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom03.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom03t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom04.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom04t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom05.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom05t.jpg" class="iborder" /></a></div>
+<div class="card1"><a href="http://www.thaiabc.com/actresse/joom06.jpg" rel="lightbox[roadtrip]"><img src="http://www.thaiabc.com/actresst/joom06t.jpg" class="iborder" /></a></div>
 </div><!-- cardright -->
 </div><!-- covercard -->
 </div><!-- blockcenter -->
 
+<!-- Part : 4 = retouch album -->
 <div class="blockcenter">
-<div class="covercard" style="background-color:royalblue !important;color:white;">
-<div class="card2"><a href="http://mypictureonmagazine.com"><img src="http://www.thaiall.com/actress/nok_mypictureonmagazine.jpg" style="height:150px"></a></div>
-<div class="card2"><img src="http://www.thaiall.com/actress/nok_covervision.jpg" style="height:150px"></div>
-<div class="card2"><img src="http://www.thaiall.com/actress/nok_fakemagazinecover.jpg" style="height:150px"></div>
-<div class="card2"><img src="http://www.thaiall.com/actress/nok_magmypic.jpg" style="height:150px"></div>
-<div class="card2"><img src="http://www.thaiall.com/actress/nok_oncoverpage.jpg" style="height:150px"></div>
-<div class="card2"><img src="http://www.thaiall.com/actress/nok_sillywebcam.jpg" style="height:150px"></div>
-<div class="card2"><img src="http://www.thaiall.com/actress/nok_magofun.jpg" style="height:150px"></div>
-<div class="card2"><img src="http://www.thaiall.com/actress/nok_fototrix.jpg" style="height:150px"></div>
-<div class="card2"><img src="http://www.thaiall.com/actress/nok_scrapbookgenerator.jpg" style="height:150px"></div>
-</div>
-</div>
+<div class="covercard" style="background-color:royalblue !important;color:white;border:1px solid #00aaff;border-radius:5px;">
+<div class="card2"><a href="http://mypictureonmagazine.com"><img src="http://www.thaiall.com/actress/nok_mypictureonmagazine.jpg" style="height:150px" /></a></div>
+<div class="card2"><img src="http://www.thaiall.com/actress/nok_covervision.jpg" style="height:150px" /></div>
+<div class="card2"><img src="http://www.thaiall.com/actress/nok_fakemagazinecover.jpg" style="height:150px" /></div>
+<div class="card2"><img src="http://www.thaiall.com/actress/nok_magmypic.jpg" style="height:150px" /></div>
+<div class="card2"><img src="http://www.thaiall.com/actress/nok_oncoverpage.jpg" style="height:150px" /></div>
+<div class="card2"><img src="http://www.thaiall.com/actress/nok_sillywebcam.jpg" style="height:150px" /></div>
+<div class="card2"><img src="http://www.thaiall.com/actress/nok_magofun.jpg" style="height:150px" /></div>
+<div class="card2"><img src="http://www.thaiall.com/actress/nok_fototrix.jpg" style="height:150px" /></div>
+<div class="card2"><img src="http://www.thaiall.com/actress/nok_scrapbookgenerator.jpg" style="height:150px" /></div>
+<div class="card2"><a href="http://www.thaiabc.com/actresse/joom50.jpg"><img src="http://www.thaiabc.com/actresst/joom50t.jpg" style="height:150px;" /></a></div>
+<div class="card2"><a href="http://www.thaiabc.com/actresse/joom51.jpg"><img src="http://www.thaiabc.com/actresst/joom51t.jpg" style="height:150px;" / ></a></div>
+<div class="card2"><a href="http://www.thaiabc.com/actresse/joom07.jpg"><img src="http://www.thaiabc.com/actresst/joom07t.jpg" style="height:150px;" /></a></div>
+</div><!-- covercard --> 
+</div><!-- blockcenter -->
 
+<!-- Part : 5 = conclusion -->
 <div class="blockhidden">
-<div class="covercard" style="background-color:#ddffdd;color:white;">
-<a href="http://www.thaiall.com/actress/joom3e.jpg"><img src="http://www.thaiall.com/actress/joom3et.jpg" style="height:60px;" /></a>
-<a href="http://www.thaiabc.com/actresse/joom50.jpg"><img src="http://www.thaiabc.com/actresst/joom50t.jpg" style="height:60px;" /></a>
-<a href="http://www.thaiabc.com/actresse/joom51.jpg"><img src="http://www.thaiabc.com/actresst/joom51t.jpg" style="height:60px;" / ></a>
-<br/><a href="http://www.facebook.com/profile.php?id=814248894">facebook.com/profile.php?id=814248894</a>
-<br/><a href="joom_retouch1.jpg">joom_retouch1.jpg</a>
-<a href="joom_540619.htm">joom_540619.htm</a>
-</div>
-
-<div class="covercard" style="background-color:#ffdddd;color:white;">
-<p><span class="glyphicon glyphicon-globe" style="color:black;font-size:12px;"></span> <a href="https://www.w3schools.com/cssref/tryit.asp?filename=trycss_display">w3schools.com/cssref/tryit.asp</a></p>
-<p><span class="glyphicon glyphicon-globe" style="color:black;font-size:12px;"></span> <a href="https://developers.google.com/speed/pagespeed/insights/?hl=th&url=http%3A%2F%2Fwww.thaiall.com%2Factress%2Fjoom.htm%3F1">developers.google.com/speed/pagespeed/insights</a>
-<br/><span class="glyphicon glyphicon-heart" style="color:red;"></span></p>
+<div class="covercard" style="background-color:#ffdddd;color:black;">
+<p style="text-align:left;width:60%;">
+<span class="glyphicon glyphicon-heart" style="color:red;"></span> ชวนมองการปรับปรุงเว็บเพจ
+<br/><span class="glyphicon glyphicon-ok"></span> ปรับใช้ https แทน http อ้างถึง link css จากภายนอก ตามเงื่อนไขของ heroku.com
+<br/><span class="glyphicon glyphicon-ok"></span> เพิ่มตัวอย่างการอัพโหลดใน Free webhosting ที่หลากหลาย
+<br/><span class="glyphicon glyphicon-ok"></span> ปรับลดขนาดภาพใน thaiabc.com เพื่อลด load รองรับการตรวจของ pagespeed
+<br/><span class="glyphicon glyphicon-globe" style="color:black;font-size:12px;"></span> ทดสอบเว็บเพจด้วย <a href="https://developers.google.com/speed/pagespeed/insights/?hl=th&url=http%3A%2F%2Fwww.thaiall.com%2Factress%2Fjoom.htm%3F1">Page speed ของ Google</a> เมื่อ 100 คือ เป้าหมาย
+</p>
+<p style="text-align:left;width:40%;">
+<b>เป้าหมายของเว็บเพจ</b>
+<br/>จ๋อมเว็บเพจ คือ เว็บเพจตัวอย่างที่เป็นผลจากการออกแบบเว็บเพจแบบสแตติกโดยใช้ inline css และ internal css ให้รองรับการแสดงผลกับอุปกรณ์ที่หลากหลายได้เหมาะสม (responsive) ปรับเว็บเพจให้ส่งเข้าประเมินจาก page speed แล้วได้คะแนนสูง และอัพโหลดไปยังฟรีเว็บโฮสติ้งต่าง ๆ แล้วสามารถเรียกใช้โดยไม่ต้องปรับแต่งเพิ่มเติม
+</p>
 </div>
 </div><!-- blockhidden -->
 
-<div class="covercard" style="background-color:white;">
+<div class="covercard" style="background-color:white;text-align:center;">
 <script language="javascript">
 <!--
 url=document.location.href.substr(7,11)
