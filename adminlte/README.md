@@ -1,3 +1,3 @@
 **AdminLTE**
 
-- ![adminlte](http://www.thaiall.com/adminlte)
+- [adminlte](http://www.thaiall.com/adminlte)
