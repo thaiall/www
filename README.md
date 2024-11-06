@@ -27,6 +27,7 @@
 + https://thaiall.github.io/www/web2/html5_test.htm
 + https://thaiall.github.io/www/web2/java_test.htm
 + https://thaiall.github.io/www/googlemcu/index.html
++ https://thaiall.github.io/www/helloworld.htm
 
 ![googlemcu](https://thaiall.github.io/www/create_repository.png)
 
